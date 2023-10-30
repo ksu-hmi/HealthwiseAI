@@ -1,5 +1,5 @@
 # HealthwiseAI
-An AI-Powered Patient Health Companion (PHC) &amp; Your Personalized Health Compass/Navigator
+An AI-Powered Patient Health Companion (PHC) & Personalized Health Compass/Navigator
 
 HealthWise AI is an AI-Powered Patient Health Companion (PHC) that serves as an intelligent and comprehensive healthcare assistant. Integrated into a universal patient portal, it provides personalized insights, treatment guidance, and insurance network verification. The project aims to revolutionize the patient experience, enhancing outcomes and reducing healthcare costs.
 
