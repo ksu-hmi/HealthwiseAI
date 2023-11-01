@@ -56,4 +56,4 @@ user_data = healthwise_ai.login_user(username, password)
 
 # Access the user data if the login is successful
 if user_data:
-    print(f"User data for '{username}': {user_data}")
+    print(f"User data for '{username}': {user_data}") 
