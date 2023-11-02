@@ -2,7 +2,7 @@ import csv
 import random
 
 # Creating a dataset for 30 fictitious patients for the HealthWise demo
-patient_data = []
+patient_data = [] 
 
 for i in range(30):
     patient = {
