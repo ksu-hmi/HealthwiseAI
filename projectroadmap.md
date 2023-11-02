@@ -13,6 +13,7 @@
 - https://github.com/dylanmeca/ChatGPT-Python.git - Had to pip install openai and gradio. It runs and opens ChatGPT-Assistant on the browser (running on local URL: http://127.0.0.1:7860/, OpenAI API key is needed to further explore the chatbot.
 - https://github.com/spomichter/HealthGPT.git - File not found error.
 - https://github.com/JeffJeffery/HealthDataInterpretation.git - needs API Key.
+- https://github.com/microsoft/HealthBotCodeSnippets.git (not using), https://github.com/microsoft/HealthBotRefArchDeploy.git (not using), https://github.com/rajatj9/Health-Care-Chatbot.git, 
 
 ### Sprint 2 Requirements - Due Nov. 18
 - [X] Commit at least 6 substantial code changes with informative commit messages. Each commit message should explain the specific updates and their significance.
@@ -33,3 +34,6 @@
   - [ ] Optionally, show 1-2 screenshots or pictures demonstrating the idea or its components.
 - [ ] Each team member must upload their own PPT slide to D2L to ensure everyone has a copy and receives credit.
 - [ ] Ensure that there is a copy of the PowerPoint slide in your GitHub repository for easy reference by future coders.
+
+### Resources
+- https://learn.microsoft.com/en-us/azure/health-bot/quickstart-createyourhealthcarebot 
