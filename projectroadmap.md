@@ -6,7 +6,7 @@
 - [X] Explore at least one existing Python code base related to the project and submit updates to the projectroadmap.md file summarizing the findings. Ensure the code is thoroughly reviewed and attempted to run.
       
 - https://github.com/StanfordBDHG/HealthGPT.git - Unable to use this as languages used are Swift - 96.8% and Ruby - 3.2%.
-- https://github.com/prabhat-kr-dubey/A.I_Doc_HealthcareChatbot.git - Had to pip install modules: pandas, sklearn, wikipedia, running on visual studio code but with some errors.
+- https://github.com/prabhat-kr-dubey/A.I_Doc_HealthcareChatbot.git - Had to pip install modules: pandas, sklearn and wikipedia. It's running on visual studio code but with some errors.
 - https://github.com/dylanmeca/ChatGPT-Python.git - Had to pip install openai and gradio. It runs and opens ChatGPT-Assistant on the browser (running on local URL: http://127.0.0.1:7860/, OpenAI API key is needed to further explore the chatbot.
 - https://github.com/spomichter/HealthGPT.git - File not found error.
 - https://github.com/JeffJeffery/HealthDataInterpretation.git - needs API Key.
