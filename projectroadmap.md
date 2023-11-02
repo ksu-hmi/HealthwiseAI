@@ -4,9 +4,11 @@
 - [X] Be associated with ownership of a code repository in the KSU-HMI Github organization (Ensure Owner or Maintainer Role for team members)
 - [X] Edit and commit changes in the readme.md file in the repository (Commits should be visible on Github)
 - [X] Explore at least one existing Python code base related to the project and submit updates to the projectroadmap.md file summarizing the findings. Ensure the code is thoroughly reviewed and attempted to run.
-      
-- https://github.com/sebastianiv21/ada-health-api.git - 
-- https://github.com/StanfordBDHG/HealthGPT.git - Unable to use this as languages used are Swift - 96.8% and Ruby - 3.2%.
+
+ __Repos:__     
+- Ada Health: https://github.com/sebastianiv21/ada-health-api.git, https://github.com/sebastianiv21/ada-client.git, https://github.com/sebastianiv21/ada-server.git (all mostly JavaScript)
+- https://github.com/nyuolab/NYUTron.git - 
+- https://github.com/StanfordBDHG/HealthGPT.git - iOS app. Languages used are Swift - 96.8% and Ruby - 3.2%. Requires API key
 - https://github.com/prabhat-kr-dubey/A.I_Doc_HealthcareChatbot.git - Had to pip install modules: pandas, sklearn and wikipedia. It's running on visual studio code but with some errors.
 - https://github.com/dylanmeca/ChatGPT-Python.git - Had to pip install openai and gradio. It runs and opens ChatGPT-Assistant on the browser (running on local URL: http://127.0.0.1:7860/, OpenAI API key is needed to further explore the chatbot.
 - https://github.com/spomichter/HealthGPT.git - File not found error.
@@ -15,7 +17,7 @@
 ### Sprint 2 Requirements - Due Nov. 18
 - [X] Commit at least 6 substantial code changes with informative commit messages. Each commit message should explain the specific updates and their significance.
 - [X] Use GitHub desktop to manage your code updates and commits.
-- [ ] Ensure that the commits are visible in the shared organization on GitHub, where the professor can access them.
+- [X] Ensure that the commits are visible in the shared organization on GitHub, where the professor can access them.
 - [ ] Include URLs to 2 code commits in the `projectroadmap.md` file.
 - [X] Track progress on planned and emerging tasks within the `projectroadmap.md` document.
 - [X] Use checkboxes to mark completed tasks, add new tasks as they emerge, __or__  include "DONE" to mark finished items in the `projectroadmap.md` file.
