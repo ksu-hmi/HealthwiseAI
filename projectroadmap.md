@@ -6,7 +6,7 @@
 - [X] Explore at least one existing Python code base related to the project and submit updates to the projectroadmap.md file summarizing the findings. Ensure the code is thoroughly reviewed and attempted to run.
 
  __Repos:__     
-- Ada Health: https://github.com/sebastianiv21/ada-health-api.git (API), https://github.com/sebastianiv21/ada-client.git (Frontend), https://github.com/sebastianiv21/ada-server.git (Backend). All mostly JavaScript
+- Ada Health: https://github.com/sebastianiv21/ada-health-api.git (API), https://github.com/sebastianiv21/ada-client.git (Frontend), https://github.com/sebastianiv21/ada-server.git (Backend). All mostly JavaScript (not using)
 - https://github.com/StanfordBDHG/HealthGPT.git - iOS app. Languages used are Swift - 96.8% and Ruby - 3.2%. Requires API key
 - https://github.com/prabhat-kr-dubey/A.I_Doc_HealthcareChatbot.git - Had to pip install modules: pandas, sklearn and wikipedia. It's running on visual studio code but with some errors.
 - https://github.com/dylanmeca/ChatGPT-Python.git - Had to pip install openai and gradio. It runs and opens ChatGPT-Assistant on the browser (running on local URL: http://127.0.0.1:7860/, OpenAI API key is needed to further explore the chatbot.
