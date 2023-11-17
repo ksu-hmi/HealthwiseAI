@@ -1,19 +1,21 @@
-import openai
+import os
+from openai import OpenAI
 
 # Set your OpenAI GPT-3 API key
-openai.api_key = 'your -api-key'
+client = OpenAI(api_key=os.environ['TXHpyUizxQUVFWNOJAsWR6QK2JEzEngl79leJoMifNFDpa6D9tgoyeHOWZ7wcve9AQP0Sa5qptVz40c22EWGDFgTpIsRGzZVWP2QQtPCoz9KzMWTVVtqRa3KLDJSjIni'])
 
 # Function to generate a response from GPT-3
 def generate_healthwise_response(user_input):
     try:
         prompt = f"User: {user_input}\nChatbot:"
-        response = openai.Completion.create(
-            engine="text-davinci-003",
-            prompt=prompt,
-            temperature=0.7,
-            max_tokens=150
+        response = client.ChatCompletion.create(
+            model="text-davinci-003",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": user_input}
+            ]
         )
-        return response.choices[0].text.strip()
+        return response.choices[0].message.content.strip()
     except Exception as e:
         return f"An error occurred: {str(e)}"
 
