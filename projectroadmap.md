@@ -19,6 +19,9 @@
 - [X] Use GitHub desktop to manage your code updates and commits.
 - [X] Ensure that the commits are visible in the shared organization on GitHub, where the professor can access them.
 - [ ] Include URLs to 2 code commits in the `projectroadmap.md` file.
+     - https://github.com/ksu-hmi/Healthwise_AI/commit/b522421bb77fe7d07211b16cb667f9e0ebf99597
+     -  https://github.com/ksu-hmi/Healthwise_AI/commit/1b71322c999bac81a587b51db0a58a7e7311a574#diff-36f6200cd8353111badb874140eba3af6055f4cc5839fbdeb9ede992620828c1
+     -  https://github.com/ksu-hmi/Healthwise_AI/commit/984b6a11a90c837b83c6087912836846ea1a421b
 - [X] Track progress on planned and emerging tasks within the `projectroadmap.md` document.
 - [X] Use checkboxes to mark completed tasks, add new tasks as they emerge, __or__  include "DONE" to mark finished items in the `projectroadmap.md` file.
 - [X] Make sure to update the `projectroadmap.md` file regularly to reflect your progress.
