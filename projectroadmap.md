@@ -37,5 +37,7 @@
 - [X] Each team member must upload their own PPT slide to D2L to ensure everyone has a copy and receives credit.
 - [X] Ensure that there is a copy of the PowerPoint slide in your GitHub repository for easy reference by future coders.
 
+### Final Presentation - Due Dec. 6
+
 ### Resources
 - https://learn.microsoft.com/en-us/azure/health-bot/quickstart-createyourhealthcarebot 
