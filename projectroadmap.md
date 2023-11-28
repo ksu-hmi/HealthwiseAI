@@ -27,15 +27,15 @@
 - [X] Make sure to update the `projectroadmap.md` file regularly to reflect your progress.
 
 ### Sprint 3 Requirements - Due Nov. 28
-- [ ] Continue coding, refining, and testing your project during Sprint 3. Ensure there is additional progress compared to Sprint 2.
-- [ ] If your project's scope is minor and has already been completed, consider adding more scope and working on it.
-- [ ] Create a PowerPoint slide introducing your project, making it both attractive and informative.
-  - [ ] List your project team members.
-  - [ ] Display the title of your project.
-  - [ ] Include a tagline that introduces the main concept of your project.
-  - [ ] Optionally, show 1-2 screenshots or pictures demonstrating the idea or its components.
-- [ ] Each team member must upload their own PPT slide to D2L to ensure everyone has a copy and receives credit.
-- [ ] Ensure that there is a copy of the PowerPoint slide in your GitHub repository for easy reference by future coders.
+- [X] Continue coding, refining, and testing your project during Sprint 3. Ensure there is additional progress compared to Sprint 2.
+- [X] If your project's scope is minor and has already been completed, consider adding more scope and working on it.
+- [X] Create a PowerPoint slide introducing your project, making it both attractive and informative.
+  - [X] List your project team members.
+  - [X] Display the title of your project.
+  - [X] Include a tagline that introduces the main concept of your project.
+  - [X] Show 1-2 screenshots or pictures demonstrating the idea or its components.
+- [X] Each team member must upload their own PPT slide to D2L to ensure everyone has a copy and receives credit.
+- [X] Ensure that there is a copy of the PowerPoint slide in your GitHub repository for easy reference by future coders.
 
 ### Resources
 - https://learn.microsoft.com/en-us/azure/health-bot/quickstart-createyourhealthcarebot 
