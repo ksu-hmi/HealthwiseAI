@@ -70,6 +70,14 @@ class User:
 class HealthWiseAI:
     def __init__(self):
         self.users = {}  # Initialize an empty dictionary to store user objects
+        self.current_username = None  # Track the current username for interactions
+
+    # Helper method to get the current user
+    def get_current_user(self):
+        if self.current_username is None or self.current_username not in self.users:
+            print("User not found.")
+            return None
+        return self.users[self.current_username]
 
     # Method to register a new user
     def register_user(self):
@@ -100,239 +108,117 @@ class HealthWiseAI:
             print("Invalid username or password. Please try again.")
             return False
 
+        # Set the current username for subsequent interactions
+        self.current_username = username
         print("Login successful.")
         return True
 
     def modify_user_preference(self):
-        # Prompt the user for their username, preference name, and preference value
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return False
-
+        # Prompt the user for the preference name and value
         preference_name = input("Enter the preference name: ")
         preference_value = input("Enter the preference value: ")
 
-        user = self.users[username]
-        # Modify the user's preference with the provided name and value
-        user.add_preference(preference_name, preference_value)
-        print("User preference modified successfully.")
+        user = self.get_current_user()
+        if user is not None:
+            # Modify the user's preference with the provided name and value
+            user.add_preference(preference_name, preference_value)
+            print("User preference modified successfully.")
         return True
 
     def get_user_preference(self):
-        # Prompt the user for their username and the name of the preference to retrieve
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return None
-
+        # Prompt the user for the preference name to retrieve
         preference_name = input("Enter the preference name: ")
 
-        user = self.users[username]
-        # Retrieve the user's specified preference
-        return user.get_preference(preference_name)
+        user = self.get_current_user()
+        if user is not None:
+            # Retrieve the user's specified preference
+            return user.get_preference(preference_name)
+        return None
     
     def modify_user_health_goal(self):
-        # Get the username from the user
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return False
-
-        # Get the health goal name and value from the user
+        # Prompt the user for the health goal name and value
         goal_name = input("Enter the health goal name: ")
         goal_value = input("Enter the health goal value: ")
 
-        # Find the user and add the health goal
-        user = self.users[username]
-        user.add_health_goal(goal_name, goal_value)
-        print("User health goal modified successfully.")
+        user = self.get_current_user()
+        if user is not None:
+            # Add or modify the user's health goal with the provided name and value
+            user.add_health_goal(goal_name, goal_value)
+            print("User health goal modified successfully.")
         return True
 
     def get_user_health_goal(self):
-        # Get the username from the user
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return None
-
-        # Get the health goal name from the user
+        # Prompt the user for the health goal name to retrieve
         goal_name = input("Enter the health goal name: ")
 
-        # Find the user and get the specified health goal
-        user = self.users[username]
-        return user.get_health_goal(goal_name)
+        user = self.get_current_user()
+        if user is not None:
+            # Retrieve the user's specified health goal
+            return user.get_health_goal(goal_name)
+        return None
 
     def modify_user_communication_preference(self):
-        # Get the username from the user
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return False
-
-        # Get the communication preference name and value from the user
+        # Prompt the user for the communication preference name and value
         preference_name = input("Enter the communication preference name: ")
         preference_value = input("Enter the communication preference value: ")
 
-        # Find the user and add the communication preference
-        user = self.users[username]
-        user.add_communication_preference(preference_name, preference_value)
-        print("User communication preference modified successfully.")
+        user = self.get_current_user()
+        if user is not None:
+            # Modify the user's communication preference with the provided name and value
+            user.add_communication_preference(preference_name, preference_value)
+            print("User communication preference modified successfully.")
         return True
 
     def get_user_communication_preference(self):
-        # Get the username from the user
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return None
-
-        # Get the communication preference name from the user
+        # Prompt the user for the communication preference name to retrieve
         preference_name = input("Enter the communication preference name: ")
 
-        user = self.users[username]
-        return user.get_communication_preference(preference_name)
+        user = self.get_current_user()
+        if user is not None:
+            # Retrieve the user's specified communication preference
+            return user.get_communication_preference(preference_name)
+        return None
 
     def schedule_appointment(self):
-        # Get the username from the user
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return False
-
-        # Get appointment details from the user
+        # Prompt the user for appointment details
         appointment_datetime = input("Enter the appointment datetime (YYYY-MM-DD HH:MM): ")
         doctor = input("Enter the doctor's name: ")
         location = input("Enter the location: ")
 
-        appointment = {
-            "datetime": datetime.strptime(appointment_datetime, "%Y-%m-%d %H:%M"),
-            "doctor": doctor,
-            "location": location
-        }
-
-        user = self.users[username]
-        user.schedule_appointment(appointment)
-        print("Appointment scheduled successfully.")
+        user = self.get_current_user()
+        if user is not None:
+            # Schedule an appointment for the current user
+            appointment = {
+                "datetime": datetime.strptime(appointment_datetime, "%Y-%m-%d %H:%M"),
+                "doctor": doctor,
+                "location": location
+            }
+            user.schedule_appointment(appointment)
+            print("Appointment scheduled successfully.")
         return True
 
     def get_user_appointments(self):
-        # Get the username from the user
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return None
+        user = self.get_current_user()
+        if user is not None:
+            # Retrieve the user's appointments
+            return user.get_appointments()
+        return None
 
-        user = self.users[username]
-        return user.get_appointments()
-
-    def add_user_activity(self):
-        # Get the username from the user
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return False
-
-        # Get activity details from the user
-        activity_datetime = input("Enter the activity datetime (YYYY-MM-DD HH:MM): ")
-        activity_type = input("Enter the activity type: ")
-        activity_duration = input("Enter the activity duration (in minutes): ")
-
-        activity = {
-            "datetime": datetime.strptime(activity_datetime, "%Y-%m-%d %H:%M"),
-            "type": activity_type,
-            "duration": int(activity_duration)
-        }
-
-        user = self.users[username]
-        user.add_activity(activity)
-        print("Activity added successfully.")
-        return True
-
-    def get_user_activities(self):
-        # Get the username from the user
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return None
-
-        user = self.users[username]
-        return user.get_activities()
-
-    def add_user_notification(self):
-        # Get the username from the user
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return False
-
-        # Get notification details from the user
-        notification_datetime = datetime.now()
-        notification_message = input("Enter the notification message: ")
-
-        notification = {
-            "datetime": notification_datetime,
-            "message": notification_message
-        }
-
-        user = self.users[username]
-        user.add_notification(notification)
-        print("Notification added successfully.")
-        return True
-
-    def get_user_notifications(self):
-        # Get the username from the user
-        username = input("Enter your username: ")
-        if username not in self.users:
-            print("User not found.")
-            return None
-
-        user = self.users[username]
-        return user.get_notifications()
-    
+# Instantiate the HealthWiseAI class
 healthwise_ai = HealthWiseAI()
 
-# Register a user
+# Example usage:
 healthwise_ai.register_user()
-
-# Login a user
 healthwise_ai.login_user()
-
-# Modify user preferences
 healthwise_ai.modify_user_preference()
-
-# Get user preferences
-healthwise_ai.get_user_preference()
-
-# Modify user health goals
+preference = healthwise_ai.get_user_preference()
+print("User preference:", preference)
 healthwise_ai.modify_user_health_goal()
-
-# Get user health goals
-healthwise_ai.get_user_health_goal()
-
-# Modify user communication preferences
+goal = healthwise_ai.get_user_health_goal()
+print("User health goal:", goal)
 healthwise_ai.modify_user_communication_preference()
-
-# Get user communication preferences
-healthwise_ai.get_user_communication_preference()
-
-# Schedule an appointment
+communication_preference = healthwise_ai.get_user_communication_preference()
+print("User communication preference:", communication_preference)
 healthwise_ai.schedule_appointment()
-
-# Get user appointments
-healthwise_ai.get_user_appointments()
-
-# Add user activity
-healthwise_ai.add_user_activity()
-
-# Get user activities
-healthwise_ai.get_user_activities()
-
-# Add user notification
-healthwise_ai.add_user_notification()
-
-# Get user notifications
-healthwise_ai.get_user_notifications()
-   
-
-
+appointments = healthwise_ai.get_user_appointments()
+print("User appointments:", appointments)

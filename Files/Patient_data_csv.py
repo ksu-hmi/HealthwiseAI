@@ -6,7 +6,7 @@ patient_data = []
 
 for i in range(30):
     patient = {
-        "patient_id": i + 1,
+        "user_id": i + 1,
         "name": f"Patient_{i + 1}",
         "age": random.randint(20, 80),
         "gender": random.choice(["Male", "Female"]),
