@@ -1,7 +1,7 @@
 import openai
 import getpass
 # Initialize OpenAI API
-openai.api_key = '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'
+openai.api_key = 'your api key'
 
 def get_user_input(prompt):
     return input(prompt)
