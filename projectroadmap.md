@@ -12,7 +12,7 @@
 - https://github.com/dylanmeca/ChatGPT-Python.git - Had to pip install openai and gradio. It runs and opens ChatGPT-Assistant on the browser (running on local URL: http://127.0.0.1:7860/, OpenAI API key is needed to further explore the chatbot.
 - https://github.com/spomichter/HealthGPT.git - File not found error.
 - https://github.com/JeffJeffery/HealthDataInterpretation.git - needs API Key.
-- https://github.com/microsoft/HealthBotCodeSnippets.git (not using), https://github.com/microsoft/HealthBotRefArchDeploy.git (not using), https://github.com/rajatj9/Health-Care-Chatbot.git (not using)
+- https://github.com/microsoft/HealthBotCodeSnippets.git (Javascript - not using), https://github.com/microsoft/HealthBotRefArchDeploy.git (Requires Azure - not using), https://github.com/rajatj9/Health-Care-Chatbot.git (Javascript - not using)
 
 ### Sprint 2 Requirements - Due Nov. 18
 - [X] Commit at least 6 substantial code changes with informative commit messages. Each commit message should explain the specific updates and their significance.
