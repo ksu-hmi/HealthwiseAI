@@ -12,7 +12,7 @@ HealthWise AI is an AI-Powered Patient Health Companion (PHC) that serves as an 
 - EMR Integration & Interoperability: Seamlessly integrates with EMR systems and health devices.
  
 ## Technologies Used
-The project aims to utilize Python programming skills, machine learning algorithms, and healthcare data analysis techniques to create an innovative healthcare solution.
+The project aims to utilize Python programming skills, machine learning algorithms, NLP, and healthcare data analysis techniques to create an innovative healthcare solution.
 
 ## Contributor
 Colette O. Obazee (https://github.com/Coletteobazee)
